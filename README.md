@@ -1,0 +1,1 @@
+# https-github.com-saurabhsakhare955-ship-it-screen-detector
