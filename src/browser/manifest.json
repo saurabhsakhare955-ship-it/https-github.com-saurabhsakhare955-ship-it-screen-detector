@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Screen Detector",
+  "version": "1.0.0",
+  "description": "Detects screenshot/screen recording signals and keeps local logs.",
+  "permissions": ["storage", "alarms", "tabs", "clipboardRead"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Screen Detector"
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

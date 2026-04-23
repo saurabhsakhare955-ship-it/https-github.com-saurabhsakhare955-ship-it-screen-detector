@@ -1,0 +1,41 @@
+{
+  "name": "screen-detector",
+  "version": "1.0.0",
+  "description": "Cross-platform screenshot and screen recording detection system",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "dev": "tsc -w -p tsconfig.json",
+    "test": "jest --coverage",
+    "test:unit": "jest tests --runInBand",
+    "lint": "eslint . --ext .ts,.js",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "screenshot",
+    "screen-recording",
+    "detector",
+    "security",
+    "cross-platform"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "17.4.2",
+    "nodemailer": "8.0.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/jest": "30.0.0",
+    "@types/node": "25.6.0",
+    "@types/nodemailer": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "8.59.0",
+    "@typescript-eslint/parser": "8.59.0",
+    "eslint": "10.2.1",
+    "jest": "30.3.0",
+    "prettier": "3.8.3",
+    "ts-jest": "29.4.9",
+    "typescript": "6.0.3"
+  }
+}

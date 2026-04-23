@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Screen Detector</title>
+    <style>
+      body { font-family: Arial, sans-serif; width: 320px; padding: 12px; }
+      .value { font-size: 28px; font-weight: 700; margin: 8px 0; }
+      button { margin-right: 8px; }
+      ul { max-height: 160px; overflow: auto; padding-left: 16px; }
+    </style>
+  </head>
+  <body>
+    <h3>Screen Detector</h3>
+    <div>Total detections</div>
+    <div id="count" class="value">0</div>
+    <button id="refresh">Refresh</button>
+    <button id="openOptions">Settings</button>
+    <h4>Recent logs</h4>
+    <ul id="logs"></ul>
+    <script src="popup.js"></script>
+  </body>
+</html>
